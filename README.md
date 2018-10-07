@@ -20,7 +20,7 @@ version is 4.3.11.
   2. Clone the repository:
 
      ```console
-     git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+     git clone --recursive https://github.com/rodtreweek/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
      ```
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
@@ -43,6 +43,12 @@ version is 4.3.11.
 
      ```console
      chsh -s /bin/zsh
+     ```
+     --Or in WSL add this to the end of your .bashrc:
+     ```sh
+     if [ -t 1 ]; then
+       exec zsh
+     fi
      ```
 
   5. Open a new Zsh terminal window or tab.
